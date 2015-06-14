@@ -107,6 +107,20 @@ public class MainActivity extends Activity {
         ausgabeTextfeld.setText("");
     }
 
+    public void onClickQuadX(final View cmd) {
+        operator = "x²";
+        ausgabeTextfeld.setText(ausgabeTextfeld.getText());
+        a = String.valueOf(ausgabeTextfeld.getText());
+        ausgabeTextfeld.setText(String.valueOf(Float.valueOf(a)*Float.valueOf(a)));
+    }
+
+    public void onClickDivX(final View cmd) {
+        operator = "1/X";
+        ausgabeTextfeld.setText(ausgabeTextfeld.getText());
+        a = String.valueOf(ausgabeTextfeld.getText());
+        ausgabeTextfeld.setText(String.valueOf(1 / Float.valueOf(a)));
+    }
+
     public void onClickResult (final View cmd)
     {
         b = String.valueOf(ausgabeTextfeld.getText());

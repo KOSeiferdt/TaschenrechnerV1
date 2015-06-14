@@ -100,13 +100,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="X²"
-                android:id="@+id/xx" />
+                android:id="@+id/quadx"
+                android:onClick="onClickQuadX"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1/X"
                 android:id="@+id/oneDivX"
+                android:onClick="onClickDivX"
                 />
 
             <Button
@@ -140,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9"
-                android:id="@+id/b9"
+                android:id="@+id/b7"
                 android:onClick="onClickB9"/>
 
         </TableRow>
