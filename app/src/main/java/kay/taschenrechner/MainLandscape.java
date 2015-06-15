@@ -86,6 +86,8 @@ public class MainLandscape extends Activity {
         ausgabeTextfeld.setText(ausgabeTextfeld.getText() + "15");
     }
 
+
+
     public void onClickClear(final View cmd) {
         ausgabeTextfeld.setText("");
     }
@@ -125,6 +127,14 @@ public class MainLandscape extends Activity {
         ausgabeTextfeld.setText(String.valueOf(Float.valueOf(a)*Float.valueOf(a)));
     }
 
+    public void onClickDivX(final View cmd) {
+        operator = "1/X";
+        ausgabeTextfeld.setText(ausgabeTextfeld.getText());
+        a = String.valueOf(ausgabeTextfeld.getText());
+        ausgabeTextfeld.setText(String.valueOf(1 / Float.valueOf(a)));
+    }
+
+
     public void onClickResult(final View cmd) {
         b = String.valueOf(ausgabeTextfeld.getText());
 
@@ -144,26 +154,20 @@ public class MainLandscape extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_landscape);
+        if(ausgabeTextfeld == null) ausgabeTextfeld = (TextView)findViewById(R.id.txtausgabe2);
 
         listener = new OrientationEventListener(this, SensorManager.SENSOR_DELAY_FASTEST) {
             @Override
             public void onOrientationChanged(int orientation) {
-                if (orientation == 0 || orientation == 180)
+                if ((orientation >= 345  && orientation <= 15) /*|| (orientation >= 165 && orientation <= 195)*/)
                     changeOrientation();
 
             }
         };
 
-        if (listener.canDetectOrientation() == true) {
+        if (listener.canDetectOrientation()) {
             listener.enable();
         }
-    }
-
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-
     }
 
     @Override

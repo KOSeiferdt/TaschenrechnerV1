@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainLandscape"
+            android:label="@string/title_activity_main_landscape" >
+        </activity>
     </application>
 
 </manifest>

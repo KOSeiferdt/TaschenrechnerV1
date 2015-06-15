@@ -11,10 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView2"
-        android:layout_gravity="right"
-        android:maxLength="30"/>
+        android:text=""
+        android:id="@+id/txtausgabe2"
+        android:layout_gravity="right" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,97 +24,96 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="11"
-            android:id="@+id/b11"
-            android:layout_alignParentStart="true"
+            android:id="@+id/button2"
             android:onClick="onClickB11"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="12"
-            android:id="@+id/b12"
+            android:id="@+id/button5"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/b8"
+            android:layout_toEndOf="@+id/button2"
             android:onClick="onClickB12"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="13"
-            android:id="@+id/b13"
+            android:id="@+id/button6"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/b12"
+            android:layout_toEndOf="@+id/button5"
             android:onClick="onClickB13"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="15"
-            android:id="@+id/b15"
+            android:id="@+id/button7"
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/b10"
+            android:layout_alignStart="@+id/button13"
             android:onClick="onClickB15"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="14"
-            android:id="@+id/b14"
+            android:id="@+id/button8"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/b13"
+            android:layout_toEndOf="@+id/button6"
             android:onClick="onClickB14"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="7"
-            android:id="@+id/b7"
-            android:layout_below="@+id/b8"
-            android:layout_toStartOf="@+id/b13"
+            android:id="@+id/button9"
+            android:layout_below="@+id/button2"
+            android:layout_toStartOf="@+id/button6"
             android:onClick="onClickB7"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6"
-            android:id="@+id/b6"
-            android:layout_alignTop="@+id/b7"
-            android:layout_toStartOf="@+id/b7"
+            android:id="@+id/button10"
+            android:layout_alignTop="@+id/button9"
+            android:layout_toStartOf="@+id/button9"
             android:onClick="onClickB6"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8"
-            android:id="@+id/b8"
-            android:layout_below="@+id/b13"
-            android:layout_toStartOf="@+id/b14"
+            android:id="@+id/button11"
+            android:layout_below="@+id/button6"
+            android:layout_toStartOf="@+id/button8"
             android:onClick="onClickB8"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="9"
-            android:id="@+id/b9"
-            android:layout_below="@+id/b13"
-            android:layout_toEndOf="@+id/b13"
+            android:id="@+id/button12"
+            android:layout_below="@+id/button6"
+            android:layout_toEndOf="@+id/button6"
             android:onClick="onClickB9"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="10"
-            android:id="@+id/b10"
-            android:layout_below="@+id/b15"
-            android:layout_toEndOf="@+id/b9"
+            android:id="@+id/button13"
+            android:layout_below="@+id/button7"
+            android:layout_toEndOf="@+id/button12"
             android:onClick="onClickB10"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
-            android:id="@+id/b1"
-            android:layout_below="@+id/b7"
+            android:id="@+id/button14"
+            android:layout_below="@+id/button9"
             android:layout_alignParentStart="true"
             android:onClick="onClickB1"/>
 
@@ -123,116 +121,117 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
-            android:id="@+id/b3"
-            android:layout_alignTop="@+id/b2"
-            android:layout_alignStart="@+id/b8"
+            android:id="@+id/button15"
+            android:layout_alignTop="@+id/button16"
+            android:layout_alignStart="@+id/button11"
             android:onClick="onClickB3"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
-            android:id="@+id/b2"
-            android:layout_alignTop="@+id/b1"
-            android:layout_toEndOf="@+id/b1"
+            android:id="@+id/button16"
+            android:layout_alignTop="@+id/button14"
+            android:layout_toEndOf="@+id/button14"
             android:onClick="onClickB2"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
-            android:id="@+id/b4"
-            android:layout_alignTop="@+id/b3"
-            android:layout_alignStart="@+id/b9"
+            android:id="@+id/button17"
+            android:layout_alignTop="@+id/button15"
+            android:layout_alignStart="@+id/button12"
             android:onClick="onClickB4"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
-            android:id="@+id/b5"
-            android:layout_alignTop="@+id/b4"
-            android:layout_alignStart="@+id/divX"
+            android:id="@+id/button18"
+            android:layout_alignTop="@+id/button17"
+            android:layout_alignStart="@+id/button23"
             android:onClick="onClickB5"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:id="@+id/b0"
-            android:layout_below="@+id/b1"
-            android:layout_toStartOf="@+id/b7"
+            android:id="@+id/button19"
+            android:layout_below="@+id/button14"
+            android:layout_toStartOf="@+id/button9"
             android:onClick="onClickB0"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="="
-            android:id="@+id/result"
-            android:layout_below="@+id/b3"
-            android:layout_alignStart="@+id/b2"
+            android:id="@+id/button20"
+            android:layout_below="@+id/button15"
+            android:layout_alignStart="@+id/button16"
             android:onClick="onClickResult"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="C"
-            android:id="@+id/clear"
-            android:layout_below="@+id/b5"
-            android:layout_toEndOf="@+id/result"
+            android:id="@+id/button21"
+            android:layout_below="@+id/button18"
+            android:layout_toEndOf="@+id/button20"
             android:onClick="onClickClear"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CE"
-            android:id="@+id/cleareverything"
-            android:layout_below="@+id/b5"
-            android:layout_toEndOf="@+id/clear" />
+            android:id="@+id/button22"
+            android:layout_below="@+id/button18"
+            android:layout_toEndOf="@+id/button21" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1/X"
-            android:id="@+id/divX"
-            android:layout_below="@+id/b5"
-            android:layout_toEndOf="@+id/b4" />
+            android:id="@+id/button23"
+            android:layout_below="@+id/button18"
+            android:layout_toEndOf="@+id/button17"
+            android:onClick="onClickDivX"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="*"
-            android:id="@+id/multiply"
-            android:layout_alignBaseline="@+id/b5"
-            android:layout_alignBottom="@+id/b5"
-            android:layout_toEndOf="@+id/b15"
+            android:id="@+id/button24"
+            android:layout_alignBaseline="@+id/button18"
+            android:layout_alignBottom="@+id/button18"
+            android:layout_toEndOf="@+id/button7"
             android:onClick="onClickMultiply"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
-            android:id="@+id/substract"
-            android:layout_below="@+id/b15"
-            android:layout_toEndOf="@+id/b15"
+            android:id="@+id/button25"
+            android:layout_below="@+id/button7"
+            android:layout_toEndOf="@+id/button7"
             android:onClick="onClickSubstract"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
-            android:id="@+id/add"
+            android:id="@+id/button26"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/b15"
+            android:layout_toEndOf="@+id/button7"
             android:onClick="onClickAdd"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="x²"
-            android:id="@+id/xquad"
-            android:layout_below="@+id/b5"
-            android:layout_toEndOf="@+id/b5"
+            android:id="@+id/button28"
+            android:layout_below="@+id/button18"
+            android:layout_toEndOf="@+id/button18"
             android:onClick="onClickQuadX"/>
 
     </RelativeLayout>

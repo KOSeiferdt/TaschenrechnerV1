@@ -10,7 +10,6 @@ import android.view.OrientationEventListener;
 import android.view.View;
 import android.widget.TextView;
 
-
 public class MainActivity extends Activity {
 
     private OrientationEventListener listener;
@@ -121,6 +120,8 @@ public class MainActivity extends Activity {
         ausgabeTextfeld.setText(String.valueOf(1 / Float.valueOf(a)));
     }
 
+
+
     public void onClickResult (final View cmd)
     {
         b = String.valueOf(ausgabeTextfeld.getText());
@@ -154,13 +155,13 @@ public class MainActivity extends Activity {
         listener = new OrientationEventListener(this, SensorManager.SENSOR_DELAY_FASTEST) {
             @Override
             public void onOrientationChanged(int orientation) {
-                if(orientation == 90 || orientation == 270)
+                if(/*(orientation >= 75  && orientation <= 105) ||*/ (orientation >= 255 && orientation <= 285))
                     changeOrientation();
 
             }
         };
 
-        if (listener.canDetectOrientation() == true) {
+        if (listener.canDetectOrientation()) {
             listener.enable();
         }
 
